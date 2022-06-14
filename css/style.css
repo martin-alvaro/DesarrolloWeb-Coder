@@ -135,6 +135,18 @@
     color: white;
 }
 
+.contenido-inicio div nav{
+    margin-top:70px;
+}
+
+.contenido-inicio div nav span{
+    font-size: 17px;
+}
+
+.contenido-inicio div nav a{
+    font-size: 17px;
+}
+
 .fin{
     grid-area: footer;
     background-color:  rgb(168, 66, 140);
@@ -220,6 +232,36 @@
     font-family:'ill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
+.pag-num-nosotros nav {
+    position: relative;
+    bottom: 20px;
+}
+
+
+.pag-num-nosotros nav span{
+    font-size: 17px;
+}
+
+.pag-num-nosotros nav a{
+    font-size: 17px;
+}
+
+.nosotros-acordeon{
+    width: 50%;
+    position: relative;
+    left: 25%;
+    margin-bottom: 85px;
+    margin-top: 60px;
+}
+
+.nosotros-acordeon div button{
+    font-size: 19px;
+}
+
+.accordion-body{
+    font-size: 17px;
+}
+
 .imagenDeFondo{
     margin-top: 200px;
     background-image: url("../assets/imagenes/servicios.jpg");
@@ -278,6 +320,20 @@ table td{
     text-align: center; 
     font-size: 20px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.pag-num-servicios nav{
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+.pag-num-servicios nav span{
+    font-size: 17px;
+}
+
+.pag-num-servicios nav a{
+    font-size: 17px;
+
 }
 
 #galeria{
@@ -375,6 +431,19 @@ table td{
     text-align: center;
 }
 
+.pag-num-galeria nav{
+    margin-bottom: 30px;
+}
+
+.pag-num-galeria span{
+    font-size: 17px;
+}
+
+.pag-num-galeria nav a{
+    font-size: 17px;
+}
+
+
 .flex-conteiner{
     display: flex;
     align-items: center;
@@ -463,6 +532,19 @@ table td{
     margin: 6px 0;
     background: transparent;
     font-size: 25px
+}
+
+.pag-num-contacto nav{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.pag-num-contacto nav span{
+    font-size: 17px;
+}
+
+.pag-num-contacto nav a{
+    font-size: 17px;
 }
 
 
@@ -608,6 +690,30 @@ table td{
 
     .informacion{
         font-size: 20px;
+    }
+
+    .pag-num-nosotros{
+        display: none;
+    }
+
+    .pag-num-servicios{
+        display: none;
+    }
+
+    .pag-num-galeria{
+        display: none;
+    }
+
+    .nosotros-acordeon{
+        display: none;
+    }
+
+    .pag-num-contacto{
+        display: none;
+    }
+
+    .contenido-inicio div nav{
+        display:none;
     }
 
 
