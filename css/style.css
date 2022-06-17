@@ -28,15 +28,6 @@
     grid-column: 5 / 6; 
 }
 
-.checkbtn{
-    display: none;
-}
-
-#check{
-    display: none;
-
-}
-
 .lista-nav{
     position: relative;
     top: 30px;
@@ -44,6 +35,10 @@
     font-size: 22px;
     font-family:Arial, Helvetica, sans-serif; 
     padding-left: 60px;
+}
+
+.animate__animated.animate__bounce{
+    animation-duration: 1.08s
 }
 
 .enlace-nav {
@@ -102,7 +97,7 @@
       right: 100px;
 }
 
-.titulo{
+.cont-titulo h1{
     position: relative;
     right: 200px;
     font-size: 43px;
@@ -135,17 +130,7 @@
     color: white;
 }
 
-.contenido-inicio div nav{
-    margin-top:70px;
-}
 
-.contenido-inicio div nav span{
-    font-size: 17px;
-}
-
-.contenido-inicio div nav a{
-    font-size: 17px;
-}
 
 .fin{
     grid-area: footer;
@@ -232,19 +217,6 @@
     font-family:'ill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
-.pag-num-nosotros nav {
-    position: relative;
-    bottom: 20px;
-}
-
-
-.pag-num-nosotros nav span{
-    font-size: 17px;
-}
-
-.pag-num-nosotros nav a{
-    font-size: 17px;
-}
 
 .nosotros-acordeon{
     width: 50%;
@@ -322,19 +294,6 @@ table td{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.pag-num-servicios nav{
-    margin-top: 40px;
-    margin-bottom: 25px;
-}
-
-.pag-num-servicios nav span{
-    font-size: 17px;
-}
-
-.pag-num-servicios nav a{
-    font-size: 17px;
-
-}
 
 #galeria{
     text-align: center;
@@ -431,18 +390,6 @@ table td{
     text-align: center;
 }
 
-.pag-num-galeria nav{
-    margin-bottom: 30px;
-}
-
-.pag-num-galeria span{
-    font-size: 17px;
-}
-
-.pag-num-galeria nav a{
-    font-size: 17px;
-}
-
 
 .flex-conteiner{
     display: flex;
@@ -534,19 +481,6 @@ table td{
     font-size: 25px
 }
 
-.pag-num-contacto nav{
-    margin-top: 30px;
-    margin-bottom: 40px;
-}
-
-.pag-num-contacto nav span{
-    font-size: 17px;
-}
-
-.pag-num-contacto nav a{
-    font-size: 17px;
-}
-
 
 @media screen and (max-width:400px){
 
@@ -563,7 +497,7 @@ table td{
 
     .navegador{
         grid-row: 2;
-        grid-column: 1/8;
+        grid-column: 1/7;
         display: flex;
         justify-content: center;
                
@@ -571,15 +505,14 @@ table td{
 
     .logo{
         height: 100px;
-        width: 200px;;
+        width: 170px;;
     } 
     
     .lista-nav{
-        font-size: 14px;
+        font-size: 16px;
         font-family:Arial, Helvetica, sans-serif; 
         top: 0;
-        padding-left: 5px;
-         
+        padding-left: 1px;         
     }   
 
     .cont-titulo{
@@ -595,7 +528,7 @@ table td{
          }        
 
 
-    .titulo{
+    .cont-titulo h1{
         padding: auto;
         right: 0;
         font-size: 30px;
@@ -692,29 +625,8 @@ table td{
         font-size: 20px;
     }
 
-    .pag-num-nosotros{
-        display: none;
-    }
-
-    .pag-num-servicios{
-        display: none;
-    }
-
-    .pag-num-galeria{
-        display: none;
-    }
-
     .nosotros-acordeon{
         display: none;
     }
-
-    .pag-num-contacto{
-        display: none;
-    }
-
-    .contenido-inicio div nav{
-        display:none;
-    }
-
 
 }
