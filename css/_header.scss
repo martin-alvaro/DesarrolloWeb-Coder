@@ -1,9 +1,8 @@
-$color-header: #e9d8c3fe;
 $color-enlace: salmon;
 
 .cabezera {
     grid-area: header;
-    background-color: $color-header;
+    background-color: map-get($map: $colores-fondo-map, $key: marron-claro);
     height: 200px;
     display: grid;
     grid-template-columns: repeat(7, auto);
