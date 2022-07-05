@@ -27,12 +27,12 @@
   grid-template-columns: auto auto;
   margin-bottom: 80px;
 
-    h1 {
-      @extend #contactos;
-      position: relative;
-      right: 200px;
-      grid-column: 2 / 3;
-    }
+  h1 {
+    @extend #contactos;
+    position: relative;
+    right: 200px;
+    grid-column: 2 / 3;
+  }
 }
 
 .imagenInicial {
@@ -65,7 +65,7 @@
 .contenedor-nosotros {
   background-color: map-get($map: $colores-fondo-map, $key: gris);
   display: grid;
-  grid-template-areas: 'titulo imagen''contenido  imagen' 'contenido imagen';
+  grid-template-areas: 'titulo imagen''contenido  imagen''contenido imagen';
   margin-bottom: 60px;
   align-items: center;
 }
@@ -121,21 +121,23 @@
 
 .grupo-de-servicios {
   margin-top: 40px;
-  background-color: map-get($map: $colores-fondo-map, $key: gris) ;
-  height: 580px;
+  background-color: map-get($map: $colores-fondo-map, $key: gris);
+  height: auto;
+  display: grid;
+  grid-template-areas: 'imagenservicios servicios';
+  justify-content: space-around;
+  margin-bottom: 30px;
 }
 
 .contenedor-servicios {
-  position: absolute;
-  left: 800px;
   text-align: center;
+  grid-area: servicios;
 }
 
 .imagen-izquierda {
   height: 500px;
-  position: absolute;
-  right: 850px;
-  top: 970px;
+  grid-area: imagenservicios;
+  margin: auto;
   width: 600px;
 }
 
@@ -154,11 +156,11 @@ table {
   width: 700px;
   height: 400px;
 
-    td {
-      border: solid #d7a86e60;
-      font-size: 20px;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
+  td {
+    border: solid #d7a86e60;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
 
 }
 
@@ -270,18 +272,17 @@ table {
 }
 
 .form {
-  min-width: 400px;
+  width: 100%;
   flex: 1;
-  text-align: center;
   padding: 30px;
 }
 
 .form__input {
-  width: 100%;
   padding: 7px;
   margin: 6px 0;
+  width: 100%;
   border: none;
-  border-bottom: 3px solid #E3BEC6;  
+  border-bottom: 3px solid #E3BEC6;
   background: transparent;
   color: #fff;
   font-size: 18px;
@@ -333,18 +334,14 @@ table {
 }
 
 .contenedor-mensaje-conozcanos {
-  min-width: 400px;
   flex: 1;
   text-align: center;
-  padding: 30px;
 }
 
 .mensaje-conozcanos {
   width: 100%;
-  padding: 7px;
-  margin: 6px 0;
   background: transparent;
-  font-size: 25px;
+  font-size: 29px;
 }
 
 @media screen and (max-width: 400px) {
@@ -424,7 +421,7 @@ table {
     font-size: 18px;
   }
 
-  
+
 
   .fin {
     display: flex;
@@ -478,7 +475,7 @@ table {
     font-size: 20px;
   }
 
-  #nosotros{
+  #nosotros {
     margin-top: 11px;
     font-size: 30px;
     padding-bottom: 10px;
@@ -493,12 +490,63 @@ table {
     display: none;
   }
 
-  #galeria{
-    font-size: 35px;  
+  .grupo-de-servicios {
+    grid-template-areas: 'imagenservicios''servicios';
   }
 
-  #contactos{
+  .imagen-izquierda {
+    height: 250px;
+    width: 250px;
+    margin-bottom: 10px;
+  }
+
+  #servicios {
+    font-size: 26px;
+  }
+
+  .contenedor-servicios {
+    table{
+      height: 300px;
+      width: 100%;
+      
+      td{
+        font-size: 12px;
+      }
+    }
+  }
+
+  #especialidades {
+    font-size: 18px;
+  }
+
+
+  .imagenDeFondo {
+    display: none;
+  }
+
+  #galeria {
     font-size: 35px;
   }
+
+  #contactos {
+    font-size: 35px;
+  }
+
+
   
+  .form-img{
+    min-width: 100%;
+    justify-content: center;
+  }
+
+
+  .mensaje-conozcanos{
+    font-size: 20px;
+  }
+
+  .contenedor-iframe{
+    height: 300px;
+    width: 100%;
+  }
+
 }

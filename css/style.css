@@ -223,20 +223,22 @@
 .grupo-de-servicios {
   margin-top: 40px;
   background-color: rgba(225, 219, 219, 0.421);
-  height: 580px;
+  height: auto;
+  display: grid;
+  grid-template-areas: "imagenservicios servicios";
+  justify-content: space-around;
+  margin-bottom: 30px;
 }
 
 .contenedor-servicios {
-  position: absolute;
-  left: 800px;
   text-align: center;
+  grid-area: servicios;
 }
 
 .imagen-izquierda {
   height: 500px;
-  position: absolute;
-  right: 850px;
-  top: 970px;
+  grid-area: imagenservicios;
+  margin: auto;
   width: 600px;
 }
 
@@ -364,16 +366,15 @@ table td {
 }
 
 .form {
-  min-width: 400px;
+  width: 100%;
   flex: 1;
-  text-align: center;
   padding: 30px;
 }
 
 .form__input {
-  width: 100%;
   padding: 7px;
   margin: 6px 0;
+  width: 100%;
   border: none;
   border-bottom: 3px solid #E3BEC6;
   background: transparent;
@@ -430,18 +431,14 @@ table td {
 }
 
 .contenedor-mensaje-conozcanos {
-  min-width: 400px;
   flex: 1;
   text-align: center;
-  padding: 30px;
 }
 
 .mensaje-conozcanos {
   width: 100%;
-  padding: 7px;
-  margin: 6px 0;
   background: transparent;
-  font-size: 25px;
+  font-size: 29px;
 }
 
 @media screen and (max-width: 400px) {
@@ -587,11 +584,55 @@ table td {
     display: none;
   }
 
+  .grupo-de-servicios {
+    grid-template-areas: "imagenservicios" "servicios";
+  }
+
+  .imagen-izquierda {
+    height: 250px;
+    width: 250px;
+    margin-bottom: 10px;
+  }
+
+  #servicios {
+    font-size: 26px;
+  }
+
+  .contenedor-servicios table {
+    height: 300px;
+    width: 100%;
+  }
+  .contenedor-servicios table td {
+    font-size: 12px;
+  }
+
+  #especialidades {
+    font-size: 18px;
+  }
+
+  .imagenDeFondo {
+    display: none;
+  }
+
   #galeria {
     font-size: 35px;
   }
 
   #contactos, .cont-titulo h1, #nosotros, #galeria {
     font-size: 35px;
+  }
+
+  .form-img {
+    min-width: 100%;
+    justify-content: center;
+  }
+
+  .mensaje-conozcanos {
+    font-size: 20px;
+  }
+
+  .contenedor-iframe {
+    height: 300px;
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
