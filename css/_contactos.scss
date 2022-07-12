@@ -1,0 +1,88 @@
+// inicio de los estilos para el archivo html "contactos".
+.flex-conteiner {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: map-get($map: $colores-fondo-map, $key: rosita);
+    margin-bottom: 80px;
+  }
+  
+  .form {
+    width: 100%;
+    flex: 1;
+    padding: 30px;
+  }
+  
+  .form__input {
+    padding: 7px;
+    margin: 6px 0;
+    width: 100%;
+    border: none;
+    border-bottom: 3px solid #E3BEC6;
+    background: transparent;
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  .form__input:focus {
+    background: #333;
+    outline: none;
+  }
+  
+  
+  .form-img {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+  }
+  
+  .form-img img {
+    width: 80%;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+  
+  .form textarea {
+    min-height: 140px;
+    resize: none;
+  }
+  
+  .form input[type="submit"] {
+    background-color: #E3BEC6;
+    border-bottom: none;
+    padding: 12px;
+  }
+  
+  #contactos {
+    @include centro-total;
+    font-size: 46px;
+    font-family: $tipografia-titulo;
+    font-weight: 400;
+  }
+  
+  .contenedor-conozcanos {
+    @include centro-total;
+    flex-wrap: wrap;
+    padding: 50px 50px;
+    background: map-get($map: $colores-fondo-map, $key: gris);
+    margin-bottom: 40px;
+  }
+  
+  .contenedor-mensaje-conozcanos {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .map-responsive {
+    overflow: hidden;
+  }
+  
+  
+  .mensaje-conozcanos {
+    width: 100%;
+    background: transparent;
+    font-size: 29px;
+  }
+  // fin de los estilos para el archivo html "contactos".
+  

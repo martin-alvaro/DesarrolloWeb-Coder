@@ -1,0 +1,56 @@
+// Inicio de los estilos para el archivo html "index".
+
+.container-grid {
+    display: grid;
+    grid-template-areas: 'header'
+      'contenido'
+      'footer';
+    gap: 5px;
+  }
+  
+  .contenido-inicio {
+    grid-area: contenido;
+    margin-bottom: 100px;
+  }
+  
+  .cont-titulo {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 80px;
+  
+    h1 {
+      @extend #contactos;
+      position: relative;
+      right: 200px;
+      grid-column: 2 / 3;
+    }
+  }
+  
+  .imagenInicial {
+    position: relative;
+    height: 700px;
+    right: 100px;
+  }
+  
+  .calidad {
+    display: none;
+  
+  }
+  
+  .contenedor-mensaje {
+    height: 400px;
+    background-image: url("../assets/imagenes/imagen-2.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid burlywood;
+    @include centro-total
+  }
+  
+  .mensaje {
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+  }
+  
+  // Fin de los estilos para el archivo "index".

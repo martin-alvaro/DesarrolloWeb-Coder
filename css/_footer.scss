@@ -1,8 +1,9 @@
+// Inicio de los estilos para los footers".
 $tamano-enlace: 18px;
 
 .fin {
   grid-area: footer;
-  background-color: map-get($map: $colores-fondo-map, $key: violetita );
+  background-color: map-get($map: $colores-fondo-map, $key: violetita);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   height: 200px;
@@ -18,10 +19,10 @@ $tamano-enlace: 18px;
 }
 
 .listaFin {
-  left: 380px;
   bottom: 10px;
   list-style: none;
   grid-column: 2/3;
+  padding: 0px;
 }
 
 .liFooter {
@@ -33,9 +34,9 @@ $tamano-enlace: 18px;
   color: white;
   text-decoration: none;
 
-    &:hover{
-      color: black;
-    }
+  &:hover {
+    color: black;
+  }
 }
 
 .info {
@@ -48,3 +49,4 @@ $tamano-enlace: 18px;
   font-size: 18px;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
+// Fin de los estilos para los footers".

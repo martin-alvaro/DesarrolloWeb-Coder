@@ -1,0 +1,56 @@
+// Inicio de los estilos para el archivo html "servicios".
+.imagenDeFondo {
+    margin-top: 200px;
+    background-image: url("../assets/imagenes/servicios.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 500px;
+  }
+  
+  .imagen-perro {
+    display: none;
+    height: 345px;
+    max-width: 100%;
+    margin: auto;
+  }
+  
+  #servicios {
+    @extend #contactos;
+  }
+  
+  #especialidades {
+    font-size: 27px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .contenedor-servicios {
+    margin-top: 40px;
+    background-color: map-get($map: $colores-fondo-map, $key: gris);
+    margin-bottom: 30px;
+    text-align: center;
+  
+    div {
+      display: flex;
+      justify-content: center;
+      min-width: 100%;
+  
+      table {
+        width: 1300px;
+        height: 400px;
+  
+  
+        td {
+          border: solid #d7a86e60;
+          font-size: 22px;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+      }
+    }
+  
+  }
+  
+  .color-tabla {
+    background-color: map-get($map: $colores-fondo-map, $key: gris);
+  }
+  // fin de los estilos para el archivo html "servicios".
+  

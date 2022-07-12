@@ -1,0 +1,197 @@
+// Inicio de la media queries".
+@media screen and (max-width: 565px) {
+
+    // Inicio del header".
+    .cabezera {
+        height: 280px;
+    }
+
+    .contenedor-imagen-logo {
+        grid-row: 1;
+        grid-column: 1/8;
+        text-align: center;
+    }
+
+    .navegador {
+        grid-row: 2;
+        grid-column: 1/7;
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo {
+        height: 100px;
+        width: 170px;
+    }
+
+    .lista-nav {
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+        top: 0;
+        padding-right: 3px;
+    }
+
+    // Fin del header".
+
+    // Inicio del archivo "index" ".
+    .cont-titulo {
+        background-color: #e9fdfd;
+        margin-bottom: 50px;
+        padding: 50px;
+        border-radius: 20px;
+
+        h1 {
+            grid-column: 1/3;
+            right: 0px;
+            font-size: 30px;
+            margin: 0px;
+            text-align: center;
+        }
+    }
+
+    .imagenInicial {
+        display: none;
+    }
+
+    .contenedor-calidad {
+        margin-top: 100px;
+        height: 150px;
+        text-align: center;
+    }
+
+    .calidad {
+        display: block;
+        font-size: 22px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #e2aea6;
+        height: 200px;
+    }
+
+    .contenedor-mensaje {
+        max-width: 100%;
+        height: 170px;
+    }
+
+    .mensaje {
+        font-size: 22px;
+    }
+
+    // Fin del archivo "index" ".
+
+    // Inicio del footer ".
+    .fin {
+        display: flex;
+        flex-direction: column;
+        height: 380px;
+        justify-content: center;
+    }
+
+    .logoFin {
+        width: 150px;
+        height: 80px;
+    }
+
+    .aFin {
+        color: black;
+        border-top: solid white;
+    }
+
+    .liFooter {
+        font-size: 14px;
+        display: inline-block;
+        padding-right: 10px;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    .info {
+        border: solid white;
+        padding: 3px;
+    }
+
+    .pFooter {
+        text-align: center;
+        font-size: 13px;
+    }
+
+    // Fin del footer ".
+
+    // Inicio del archivo "nosotros" ".
+    .imagen-nosotros {
+        height: 250px;
+        padding-right: 0;
+        margin: auto;
+    }
+
+    .contenedor-info {
+        margin-top: 40px;
+        text-align: justify;
+    }
+
+    .informacion {
+        font-size: 20px;
+    }
+
+    #nosotros {
+        margin-top: 11px;
+        padding-bottom: 10px;
+    }
+
+    .contenedor-nosotros {
+        grid-template-areas: 'titulo''imagen''contenido';
+        background-color: aliceblue;
+    }
+
+    .nosotros-acordeon {
+        display: none;
+    }
+
+    // Fin del archivo "nosotros" ".
+
+    // Inicio del archivo "servicios" ".
+    .imagen-perro {
+        display: block;
+    }
+
+    #servicios {
+        font-size: 30px;
+    }
+
+    #especialidades {
+        font-size: 22px;
+    }
+
+    .contenedor-servicios {
+        div {
+            table {
+                td {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .imagenDeFondo {
+        display: none;
+    }
+
+    // Fin del archivo "servicios" ".
+
+    // Inicio del archivo "contactos" ".
+    #contactos {
+        font-size: 30px;
+    }
+
+    .form-img {
+        min-width: 100%;
+        justify-content: center;
+    }
+
+    .mensaje-conozcanos {
+        font-size: 20px;
+    }
+
+    // Fin del archivo "contactos" ".
+}
+
+// Fin de la media queries".

@@ -1,0 +1,51 @@
+// Inicio de los estilos para el archivo html "nosotros".
+.contenedor-nosotros {
+    background-color: map-get($map: $colores-fondo-map, $key: gris);
+    display: grid;
+    grid-template-areas: 'titulo imagen''contenido  imagen''contenido imagen';
+    margin-bottom: 60px;
+    align-items: center;
+  }
+  
+  #nosotros {
+    @extend #contactos;
+    margin-top: 14px;
+    grid-area: titulo;
+    border-bottom: 3px solid black;
+    letter-spacing: 2px;
+  }
+  
+  .imagen-nosotros {
+    grid-area: imagen;
+    height: 400px;
+    padding-right: 19px;
+    max-width: 100%;
+  }
+  
+  .contenedor-info {
+    grid-area: contenido;
+    padding: 8%;
+    text-align: center;
+  }
+  
+  .informacion {
+    font-size: 22px;
+    font-family: 'bill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .nosotros-acordeon {
+    width: 50%;
+    position: relative;
+    left: 25%;
+    margin-bottom: 85px;
+    margin-top: 60px;
+  }
+  
+  .nosotros-acordeon div button {
+    font-size: 19px;
+  }
+  
+  .accordion-body {
+    font-size: 17px;
+  }
+  // Fin de los estilos para el archivo html "nosotros".
